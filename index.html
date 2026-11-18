@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#17131d">
+
+    <meta name="description" content="Una historia especial, llena de recuerdos y momentos compartidos.">
+
+    <title>Nuestra historia | Rosmel y Carla</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- FONDOS DECORATIVOS -->
+
+    <div class="background-glow glow-one"></div>
+
+    <div class="background-glow glow-two"></div>
+
+    <div class="stars" id="stars"></div>
+
+
+    <!-- ====================================== -->
+    <!-- REPRODUCTOR DE MÚSICA                  -->
+    <!-- ====================================== -->
+
+    <div class="music-player">
+
+        <div class="music-disc" id="musicDisc">
+            ♫
+        </div>
+
+        <div class="music-info">
+
+            <span id="songName">
+                Accidentally in Love
+            </span>
+
+            <small id="musicStatus">
+                Música para nosotros
+            </small>
+
+        </div>
+
+        <select id="songSelect" aria-label="Seleccionar canción">
+
+            <option value="accidentally">
+                Accidentally in Love
+            </option>
+
+            <option value="wonderwall">
+                Wonderwall
+            </option>
+
+        </select>
+
+        <button
+            id="musicButton"
+            class="music-button"
+            aria-label="Reproducir música"
+        >
+            ▶
+        </button>
+
+    </div>
+
+    <audio id="backgroundMusic" loop>
+
+        <source
+            id="musicSource"
+            src="assets/accidentally-in-love.mp3"
+            type="audio/mpeg"
+        >
+
+    </audio>
+
+
+    <!-- ====================================== -->
+    <!-- CONTENIDO PRINCIPAL                    -->
+    <!-- ====================================== -->
+
+    <main>
+
+
+        <!-- ================================== -->
+        <!-- PANTALLA 1: INICIO                 -->
+        <!-- ================================== -->
+
+        <section class="screen active" id="home">
+
+            <div class="home-content">
+
+                <div class="small-orbit">
+
+                    <span>18</span>
+
+                    <span>·</span>
+
+                    <span>01</span>
+
+                    <span>·</span>
+
+                    <span>26</span>
+
+                </div>
+
+                <p class="overline">
+                    UNA HISTORIA HECHA CON CARIÑO
+                </p>
+
+                <h1>
+                    Nuestra<br>
+                    <em>historia.</em>
+                </h1>
+
+                <p class="home-description">
+
+                    Algunas historias comienzan sin que nos demos cuenta.
+                    La nuestra empezó con una amistad, creció entre
+                    conversaciones y terminó convirtiéndose en algo
+                    que hoy significa muchísimo para mí.
+
+                </p>
+
+
+                <!-- SOBRE ANIMADO -->
+
+                <div class="envelope-area">
+
+                    <button
+                        class="envelope"
+                        id="openEnvelope"
+                        aria-label="Abrir sorpresa"
+                    >
+
+                        <span class="envelope-back"></span>
+
+                        <span class="envelope-letter">
+                            Para Carla ♡
+                        </span>
+
+                        <span class="envelope-flap"></span>
+
+                        <span class="envelope-heart">
+                            ♡
+                        </span>
+
+                    </button>
+
+                </div>
+
+                <p class="click-hint" id="envelopeHint">
+
+                    PULSA EL SOBRE PARA DESCUBRIR TU SORPRESA
+
+                </p>
+
+                <button class="text-button" data-go="story">
+
+                    O descubre nuestra historia
+                    <span>↗</span>
+
+                </button>
+
+            </div>
+
+
+            <div class="home-bottom">
+
+                <span>
+                    PREPARADO POR ROSMEL
+                </span>
+
+                <span>
+                    CON CARIÑO, PARA TI ♡
+                </span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================================== -->
+        <!-- PANTALLA 2: HISTORIA               -->
+        <!-- ================================== -->
+
+        <section class="screen" id="story">
+
+            <div class="screen-heading">
+
+                <p class="overline">
+                    NUESTRA HISTORIA
+                </p>
+
+                <h2>
+                    Así comenzó<br>
+                    <em>todo.</em>
+                </h2>
+
+                <p>
+                    Desde que nos conocimos hasta aquel día
+                    que cambió nuestra historia.
+                </p>
+
+            </div>
+
+
+            <!-- INTRODUCCIÓN -->
+
+            <div class="story-intro">
+
+                <span class="intro-symbol">
+                    ✧
+                </span>
+
+                <p>
+
+                    Primero fuimos compañeros, después amigos.
+                    Entre conversaciones y momentos compartidos,
+                    empecé a sentir algo que poco a poco se volvió
+                    imposible de ignorar.
+
+                </p>
+
+            </div>
+
+
+            <!-- TARJETAS DE LA HISTORIA -->
+
+            <div class="chapter-list">
+
+
+                <!-- RECUERDO 1 -->
+
+                <button class="chapter-card" data-chapter="0">
+
+                    <span class="chapter-number">
+                        01
+                    </span>
+
+                    <span class="chapter-main">
+
+                        <small>
+                            CUARTO DE SECUNDARIA
+                        </small>
+
+                        <strong>
+                            Cuando nos conocimos
+                        </strong>
+
+                        <span>
+                            El primer momento de nuestra historia.
+                        </span>
+
+                    </span>
+
+                    <span class="chapter-arrow">
+                        ↗
+                    </span>
+
+                </button>
+
+
+
+                <!-- RECUERDO 2 -->
+
+                <button class="chapter-card" data-chapter="1">
+
+                    <span class="chapter-number">
+                        02
+                    </span>
+
+                    <span class="chapter-main">
+
+                        <small>
+                            QUINTO DE SECUNDARIA
+                        </small>
+
+                        <strong>
+                            Una amistad que creció
+                        </strong>
+
+                        <span>
+                            Cuando empecé a sentir algo diferente.
+                        </span>
+
+                    </span>
+
+                    <span class="chapter-arrow">
+                        ↗
+                    </span>
+
+                </button>
+
+
+
+                <!-- RECUERDO 3 -->
+
+                <button class="chapter-card" data-chapter="2">
+
+                    <span class="chapter-number">
+                        03
+                    </span>
+
+                    <span class="chapter-main">
+
+                        <small>
+                            EXPERIENCIA VACACIONAL DE CAS
+                        </small>
+
+                        <strong>
+                            Santa Apolonia
+                        </strong>
+
+                        <span>
+                            Los nervios antes de confesarte lo que sentía.
+                        </span>
+
+                    </span>
+
+                    <span class="chapter-arrow">
+                        ↗
+                    </span>
+
+                </button>
+
+
+
+                <!-- RECUERDO 4 -->
+
+                <button class="chapter-card featured-chapter" data-chapter="3">
+
+                    <span class="chapter-number">
+                        04
+                    </span>
+
+                    <span class="chapter-main">
+
+                        <small>
+                            18 DE ENERO DE 2026
+                        </small>
+
+                        <strong>
+                            Nuestra fecha especial
+                        </strong>
+
+                        <span>
+                            El inicio oficial de nuestra relación ♡
+                        </span>
+
+                    </span>
+
+                    <span class="chapter-arrow">
+                        ↗
+                    </span>
+
+                </button>
+
+
+            </div>
+
+
+            <!-- DETALLE INTERACTIVO -->
+
+            <div class="chapter-detail" id="chapterDetail">
+
+                <button
+                    class="detail-close"
+                    id="closeChapter"
+                    aria-label="Cerrar recuerdo"
+                >
+                    ×
+                </button>
+
+                <span class="detail-label" id="detailLabel"></span>
+
+                <h3 id="detailTitle"></h3>
+
+                <p id="detailText"></p>
+
+            </div>
+
+
+            <button class="next-button" data-go="memories">
+
+                CONTINUAR
+                <span>→</span>
+
+            </button>
+
+        </section>
+
+
+
+        <!-- ================================== -->
+        <!-- PANTALLA 3: RECUERDOS              -->
+        <!-- ================================== -->
+
+        <section class="screen" id="memories">
+
+            <div class="screen-heading">
+
+                <p class="overline">
+                    MOMENTOS COMPARTIDOS
+                </p>
+
+                <h2>
+                    Pequeños momentos,<br>
+                    <em>grandes recuerdos.</em>
+                </h2>
+
+                <p>
+                    Hay momentos sencillos que se quedan contigo
+                    por la persona con quien los compartes.
+                </p>
+
+            </div>
+
+
+            <!-- RECUERDO X-MEN -->
+
+            <div class="memory-feature">
+
+
+                <div class="memory-art">
+
+                    <div class="film-circle circle-one"></div>
+
+                    <div class="film-circle circle-two"></div>
+
+                    <span class="film-icon">
+                        ✦
+                    </span>
+
+                    <span class="film-title">
+                        X-MEN
+                    </span>
+
+                    <span class="film-caption">
+                        NUESTRO RECUERDO
+                    </span>
+
+                </div>
+
+
+                <div class="memory-copy">
+
+                    <span class="memory-category">
+                        UN RECUERDO ESPECIAL
+                    </span>
+
+                    <h3>
+                        Una maratón<br>
+                        que recordaré.
+                    </h3>
+
+                    <p>
+
+                        Ver todas las películas de X-Men contigo.
+                        Tal vez para otros sea solamente ver películas,
+                        pero para mí es uno de esos recuerdos que
+                        tienen un lugar especial en nuestra historia.
+
+                    </p>
+
+                    <button class="outline-button" id="memoryButton">
+
+                        DESCUBRIR DETALLE
+                        <span>↗</span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- DETALLE DEL RECUERDO -->
+
+            <div class="memory-extra" id="memoryExtra">
+
+                <span>
+                    ♡
+                </span>
+
+                <p>
+
+                    Lo bonito no siempre está en hacer algo extraordinario.
+                    A veces está en compartir algo que nos gusta con
+                    una persona que queremos. Y de todos esos momentos,
+                    ver las películas de X-Men contigo es uno que
+                    siempre voy a recordar con mucho cariño.
+
+                </p>
+
+            </div>
+
+
+            <!-- NOTA -->
+
+            <div class="little-note">
+
+                <span class="note-star">
+                    ✧
+                </span>
+
+                <p>
+
+                    No tenemos fotografías para llenar esta página,
+                    pero sí recuerdos que merecen estar aquí.
+                    Porque no todo lo importante necesita una fotografía
+                    para quedarse en nuestra memoria.
+
+                </p>
+
+            </div>
+
+
+            <button class="next-button" data-go="time">
+
+                NUESTRO TIEMPO
+                <span>→</span>
+
+            </button>
+
+        </section>
+
+
+
+        <!-- ================================== -->
+        <!-- PANTALLA 4: CONTADOR               -->
+        <!-- ================================== -->
+
+        <section class="screen" id="time">
+
+            <div class="screen-heading">
+
+                <p class="overline">
+                    DESDE EL COMIENZO DE NOSOTROS
+                </p>
+
+                <h2>
+                    Nuestro<br>
+                    <em>tiempo.</em>
+                </h2>
+
+                <p>
+                    Cada segundo desde aquel 18 de enero de 2026.
+                </p>
+
+            </div>
+
+
+            <!-- CONTADOR -->
+
+            <div class="time-card">
+
+
+                <div class="time-date">
+
+                    <span>
+                        18
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            ENERO
+                        </strong>
+
+                        <small>
+                            2026
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="time-divider"></div>
+
+
+                <div class="counter-grid">
+
+
+                    <div class="time-unit">
+
+                        <strong id="days">
+                            0
+                        </strong>
+
+                        <span>
+                            DÍAS
+                        </span>
+
+                    </div>
+
+
+                    <div class="time-unit">
+
+                        <strong id="hours">
+                            0
+                        </strong>
+
+                        <span>
+                            HORAS
+                        </span>
+
+                    </div>
+
+
+                    <div class="time-unit">
+
+                        <strong id="minutes">
+                            0
+                        </strong>
+
+                        <span>
+                            MINUTOS
+                        </span>
+
+                    </div>
+
+
+                    <div class="time-unit">
+
+                        <strong id="seconds">
+                            0
+                        </strong>
+
+                        <span>
+                            SEGUNDOS
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+                <p class="time-message">
+
+                    Todo este tiempo forma parte de nuestra historia. ♡
+
+                </p>
+
+            </div>
+
+
+
+            <!-- FRASE DEL CONTADOR -->
+
+            <div class="time-quote">
+
+                <span>
+                    “
+                </span>
+
+                <p>
+
+                    Hay fechas que se convierten en recuerdos
+                    y recuerdos que hacen que una fecha
+                    sea imposible de olvidar.
+
+                </p>
+
+            </div>
+
+
+            <button class="next-button" data-go="letter">
+
+                TENGO ALGO QUE DECIRTE
+                <span>→</span>
+
+            </button>
+
+        </section>
+
+
+
+        <!-- ================================== -->
+        <!-- PANTALLA 5: CARTA                  -->
+        <!-- ================================== -->
+
+        <section class="screen" id="letter">
+
+            <div class="screen-heading">
+
+                <p class="overline">
+                    ALGO QUE QUIERO DECIRTE
+                </p>
+
+                <h2>
+                    Unas palabras<br>
+                    <em>para ti.</em>
+                </h2>
+
+                <p>
+                    Hay sentimientos que merecen convertirse en palabras.
+                </p>
+
+            </div>
+
+
+
+            <!-- SOBRE DE LA CARTA -->
+
+            <div class="letter-envelope-area">
+
+                <div class="letter-envelope" id="letterEnvelope">
+
+                    <div class="letter-inside">
+
+                        <span>
+                            Para Carla
+                        </span>
+
+                        <span>
+                            Con cariño ♡
+                        </span>
+
+                    </div>
+
+                    <div class="letter-front"></div>
+
+                    <div class="letter-top-flap"></div>
+
+                    <div class="letter-seal">
+                        ♡
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <button class="primary-button" id="openLetter">
+
+                ABRIR MI CARTA
+                <span>♡</span>
+
+            </button>
+
+
+            <p class="letter-hint">
+
+                Una carta escrita especialmente para ti.
+
+            </p>
+
+
+
+            <!-- MODAL DE LA CARTA -->
+
+            <div class="letter-modal" id="letterModal">
+
+                <div class="letter-modal-content">
+
+                    <button
+                        class="modal-close"
+                        id="closeLetter"
+                        aria-label="Cerrar carta"
+                    >
+                        ×
+                    </button>
+
+
+                    <div class="letter-modal-date">
+
+                        18 · 01 · 2026
+
+                    </div>
+
+
+                    <h3>
+                        Para Carla,
+                    </h3>
+
+
+
+                    <div class="letter-body">
+
+
+                        <p>
+
+                            No sé si alguna vez voy a encontrar
+                            las palabras exactas para explicarte
+                            todo lo que significas para mí,
+                            pero quiero intentarlo.
+
+                        </p>
+
+
+                        <p>
+
+                            Eres una persona espectacular.
+                            Me encanta tu actitud, tu carisma,
+                            tu belleza y, en general, todo lo que
+                            te hace ser tú. Nunca pensé que alguien
+                            podría llegar a ocupar un lugar tan
+                            especial en mi vida.
+
+                        </p>
+
+
+                        <p>
+
+                            Te amo. Eres la única chica que ha
+                            conseguido tenerme literalmente perdido
+                            en ella, de una manera que nunca antes
+                            había experimentado.
+
+                        </p>
+
+
+                        <p>
+
+                            Fuiste mi primer amor y también la
+                            persona que me enseñó a querer de una
+                            forma que nace de lo más sincero de mí.
+                            Gracias por tu compañía, por cada momento
+                            y por permitirme vivir esta historia contigo.
+
+                        </p>
+
+
+                        <p>
+
+                            Quiero seguir creando recuerdos contigo,
+                            disfrutando de las cosas sencillas,
+                            compartiendo momentos y conociéndote
+                            cada día un poquito más.
+
+                        </p>
+
+
+                        <p class="letter-final-line">
+
+                            Gracias por ser tú, Carla.
+
+                        </p>
+
+
+                    </div>
+
+
+
+                    <div class="letter-signature">
+
+                        Con todo mi cariño,<br>
+
+                        <strong>
+                            Rosmel ♡
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- MENSAJE FINAL DE LA PÁGINA -->
+
+            <div class="final-message">
+
+                <span>
+                    ✦
+                </span>
+
+                <h3>
+
+                    Seguimos escribiendo<br>
+                    nuestra historia.
+
+                </h3>
+
+                <p>
+                    18.01.2026 — Una fecha, muchos recuerdos y nosotros.
+                </p>
+
+                <button class="restart-button" id="restartButton">
+
+                    VOLVER AL INICIO
+                    ↗
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ====================================== -->
+    <!-- NAVEGACIÓN INFERIOR                    -->
+    <!-- ====================================== -->
+
+    <nav class="bottom-nav">
+
+
+        <button class="nav-item active" data-go="home">
+
+            <span>
+                ⌂
+            </span>
+
+            <small>
+                INICIO
+            </small>
+
+        </button>
+
+
+        <button class="nav-item" data-go="story">
+
+            <span>
+                ✧
+            </span>
+
+            <small>
+                HISTORIA
+            </small>
+
+        </button>
+
+
+        <button class="nav-item" data-go="memories">
+
+            <span>
+                ♡
+            </span>
+
+            <small>
+                RECUERDOS
+            </small>
+
+        </button>
+
+
+        <button class="nav-item" data-go="time">
+
+            <span>
+                ◷
+            </span>
+
+            <small>
+                TIEMPO
+            </small>
+
+        </button>
+
+
+        <button class="nav-item" data-go="letter">
+
+            <span>
+                ✉
+            </span>
+
+            <small>
+                CARTA
+            </small>
+
+        </button>
+
+
+    </nav>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
